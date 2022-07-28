@@ -10,7 +10,6 @@ const Homepage = () => {
     if(isLoading) return <Loader />
   return (
     <div className='homepage wrapper page'>
-        <div>homepage</div>
         <Items items = {data.items} />
     </div>
   )

@@ -1,0 +1,27 @@
+.item_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.item_list>li{
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+.items_header{
+    display: flex;
+    justify-content: space-between;
+}
+.items_header>h2{
+    margin-left: 4.5rem;
+    letter-spacing: 1px;
+    user-select: none;
+}
+.searchbox{
+    margin-right: 6rem;
+}
+.ant-pagination {
+    margin-top: 1rem !important;
+    text-align: center;
+}

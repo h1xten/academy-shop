@@ -16,4 +16,11 @@
     align-items: center;
     width: 100%;
 }
-
+.ant-badge{
+    color: white !important;
+}
+.cart_button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}

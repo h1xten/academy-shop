@@ -1,0 +1,29 @@
+.li-item {
+    display: flex;
+    justify-content: space-around;
+}
+.li-item>p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+.add_btn {
+    cursor: pointer;
+    font-size: 24px;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: green;
+    transition: all ease 0.5s;
+}
+.delete_btn {
+    cursor: pointer;
+    font-size: 24px;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: darkred;
+}
+.add_btn:hover{
+    transform: rotateZ(180deg);
+}
