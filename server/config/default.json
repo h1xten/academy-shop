@@ -1,0 +1,5 @@
+{
+    "serverPort": 5000,
+    "dbURL" : "mongodb+srv://h1:shoprofl12345@academy-shop.jwegsnr.mongodb.net/?retryWrites=true&w=majority",
+    "staticPath": "D:\\_prog\\mediashop\\server\\static"
+}
