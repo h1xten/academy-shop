@@ -8,7 +8,7 @@ function App() {
         <Routes>
             <Route path='/' element={<MainLayout />}>
                 <Route index element={<Homepage />} />
-                <Route path='item/:name' element={<Itempage />} />
+                <Route path='item/:id' element={<Itempage />} />
             </Route>
         </Routes>
      </BrowserRouter>

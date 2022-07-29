@@ -19,9 +19,21 @@
     user-select: none;
 }
 .searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 6rem;
+    margin-bottom: 2rem;
+}
+.searchbox>div {
+    margin-left: 1rem;
 }
 .ant-pagination {
     margin-top: 1rem !important;
     text-align: center;
+}
+.prod_not_found{
+    margin-top: 2rem;
+    user-select: none;
+    text-transform: uppercase;
 }

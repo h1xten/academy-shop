@@ -6,8 +6,11 @@ export const storeApi = createApi({
     endpoints: (builder) => ({
         getItems: builder.query({
             query: () => `item/get_items`,
+        }),
+        getItemInfo: builder.query({
+            query: (id) => `item/item_info?id=${id}`
         })
     })
 });
 
-export const {useGetItemsQuery} = storeApi;
+export const {useGetItemsQuery, useGetItemInfoQuery} = storeApi;

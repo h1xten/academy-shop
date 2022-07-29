@@ -1,0 +1,14 @@
+.itempage {
+    display: flex;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+.itempage_description{
+    margin: 0rem 3rem;
+}
+.desc_title{
+    text-align: center;
+}
+.itempage_price {
+    margin-top: 2.5rem;
+}

@@ -26,6 +26,18 @@ class ItemController {
             return res.status(500).json({message: "Cannot Add Item!"})
         }
     }
+
+    async getItem(req, res) {
+        try {
+            const {id} = req.query
+            const item = await Item.findById(id)
+            return res.json({item})
+            
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({message: "Cannot get item`s info"})
+        }
+    }
 }
 
 module.exports = new ItemController()

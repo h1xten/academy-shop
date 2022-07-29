@@ -11,7 +11,7 @@ const Item = ({item}) => {
     const items = useSelector(state => state.cart.items)
   return (
     <li>
-        <NavLink to= {`item/${item.name}`}>
+        <NavLink to= {`item/${item._id}`}>
             <img alt='item-logo' src={`${API_URL}${item.picture}`} width ='250px'/>
             <p>{item.name}</p>
         </NavLink>
@@ -21,7 +21,7 @@ const Item = ({item}) => {
                 <button className='delete_btn' onClick={() => dispatch(deleteItem(item))}><DeleteOutlined /></button>
                 :
                 <button className='add_btn' onClick={() => dispatch(addItem(item))}><PlusCircleOutlined /></button>
-        }
+            }
         </div>
     </li>
   )
