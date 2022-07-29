@@ -16,12 +16,13 @@ const Cart = ({items}) => {
     <div className='cart'>
         {items.length <= 0 ? 
             <span className='cart_empty'>Your Shopping Cart Is Empty</span> 
-            : 
+            :
             <div className='cart_list'>
+                <h3>Your Shopping Cart ({items.length} {items.length>1? 'Items' : 'Item'})</h3>
                 {items.map(e => 
                 <div className='cart_item'>
                     <div className="item_content">
-                        <img alt='item-logo' src={`${API_URL}${e.picture}`} width ='50px'/>
+                        <img alt='item-logo' src={`${API_URL}${e.picture}`} width ='25px'/>
                         <p>{e.name}</p>
                         <p className='cart_item_price'>{e.price}$</p>
                     </div>

@@ -19,7 +19,7 @@ const Items = ({items}) => {
     <div className='items_block'>
         <div className='items_header'>
             <h2>PRODUCT LIST</h2>
-            <SearchBar setCategory={setCategory} setSearch={setSearch} />
+            {currentPage === 1 ? <SearchBar setCategory={setCategory} setSearch={setSearch} /> : ''}
         </div>
         <ItemsList items = {currentItems} />
         <Pagination defaultPageSize={8} hideOnSinglePage = {true} defaultCurrent={1} showSizeChanger = {false} onChange={paginate} total={searchedItems.length} />

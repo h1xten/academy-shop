@@ -27,11 +27,12 @@
     color: var(--text-color);
     transform: scale(0.5);
     transition: all ease 0.4s;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .modal__content.active{
     transform: scale(1);
 }
